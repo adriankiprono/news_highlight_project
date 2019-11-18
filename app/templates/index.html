@@ -1,3 +1,4 @@
+{% extends 'base.html'%}
 {% import 'macros.html' as macro%}
 <html lang="en">
 <head>
@@ -47,6 +48,8 @@
       {% endfor %}
   </ul> -->
   <body>
+        {% block content %}
+
         <!-- Sport section -->
         <h3>  Sport section</h3>
         <ul>
@@ -67,7 +70,8 @@
         <ul>
             {{ macro.displaySourceList(technology)}}
         </ul>
-
+        {% endblock%}
+        
 
 
     
