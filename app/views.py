@@ -13,12 +13,12 @@ def index():
     #Getting the source
     sports_source=get_source('sports')
     business_source=get_source('business')
-    health_source=get_source('health')
+    entertainment_source=get_source('entertainment')
     technology_source =get_source('technology')
-    politics_source= get_source
-    print(sports_source)
+    # politics_source= get_source('politics')
+    
 
-    return render_template('index.html', title = title,sports = sports_source ,business=business_source,health=health_source,technology=technology_source,politics=politics_source)
+    return render_template('index.html', title = title,sports = sports_source ,business=business_source,entertainment=entertainment_source,technology=technology_source)
 
 
 @app.route('/source/<source_id>')

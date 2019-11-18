@@ -1,3 +1,4 @@
+{% import 'macros.html' as macro%}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -10,13 +11,65 @@
     
 </head>
 <body>
-    <!-- sport source section  -->
+    <!-- sport source section 
     <h3> sports section</h3>
     <ul>
         {% for sports_source in sports %}
             <li>{{ sports_source.name}}</li>
         {% endfor %}
     </ul>
+     politics section 
+    <h3>  politics sections </h3>
+    <ul>
+       {% for politics_source in politics %}
+           <li>{{ politics_source.name}}</li>
+       {% endfor %}
+   </ul> -->
+   <!-- Now showing movie -->
+   <!-- <h3>business section</h3>
+    <ul>
+       {% for business_source in business %}
+           <li>{{ business_source.name}}</li>
+       {% endfor %}
+   </ul> -->
+   <!-- Upcoming movie  -->
+   <!-- <h3> entertainment section </h3>
+   <ul>
+      {% for entertainment_source in entertainment %}
+          <li>{{ entertainment_source.name}}</li>
+      {% endfor %}
+  </ul> -->
+  <!-- Now showing movie -->
+  <!-- <h3>technology</h3>
+   <ul>
+      {% for technology_source in technology %}
+          <li>{{ technology_source.name}}</li>
+      {% endfor %}
+  </ul> -->
+  <body>
+        <!-- Sport section -->
+        <h3>  Sport section</h3>
+        <ul>
+            {{ macro.displaySourceList(sports)}}
+        </ul>
+        <!-- Business Section  -->
+        <h3> Business Section </h3>
+        <ul>
+            {{ macro.displaySourceList(business)}}
+        </ul>
+        <!-- Entertainment sectio -->
+        <h3>Entertainment section</h3>
+        <ul>
+            {{ macro.displaySourceList(entertainment)}}
+        </ul>
+        <!-- Technology section -->
+        <h3>Technology section </h3>
+        <ul>
+            {{ macro.displaySourceList(technology)}}
+        </ul>
+
+
+
     
 </body>
 </html>
