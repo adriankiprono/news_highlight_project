@@ -10,6 +10,13 @@
     
 </head>
 <body>
+    <!-- sport source section  -->
+    <h3> sports section</h3>
+    <ul>
+        {% for sports_source in sports %}
+            <li>{{ sports_source.name}}</li>
+        {% endfor %}
+    </ul>
     
 </body>
 </html>
