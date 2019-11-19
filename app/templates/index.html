@@ -12,27 +12,29 @@
     <div class="jumbotron-fluid">
      <div class="in" style="background-color: #d6a317;font-size: 35px; text-align:center;">
   <p>THE SOURCES</p>
-    <ul class=tabs>
-            <li><a data-toggle="tab" href="/">GENERAL</a></li>
-            <li><a data-toggle="tab" href="#sports">SPORTS</a></li>
-            <li><a data-toggle="tab" href="#technology">TECHNOLOGY</a></li>
-            <li><a data-toggle="tab" href="#entertainment">ENTERTAINMENT</a></li>
-            <li><a data-toggle="tab" href="#health">HEALTH</a></li>
-            <li><a data-toggle="tab" href="#science">SCIENCE</a></li>
-            <li><a data-toggle="tab" href="#political">POLITICAL</a></li>
-            <li><a data-toggle="tab" href="#business">BUSINESS</a></li>
-        </ul>
+    <ol class=tabs>
+            <div>
+                <li><a href="#general">GENERAL</a></li>
+                </div>
+            <li><a  href="#sports">SPORTS</a></li>
+            <li><a  href="#technology">TECHNOLOGY</a></li>
+            <li><a  href="#entertainment">ENTERTAINMENT</a></li>
+            <li><a  href="#health">HEALTH</a></li>
+            <li><a  href="#science">SCIENCE</a></li>
+            <li><a  href="#political">POLITICAL</a></li>
+            <li><a  href="#business">BUSINESS</a></li>
+        </ol>
           <div class="tab-content">
-             <!-- <div class="inn" style="background-color:#84a3cc ; font-size: 18px;text-align:center;"> -->
+             <div class="inn" style="background-color:#84a3cc ; font-size: 18px;text-align:center;">
 
-            <div id="general" class="tab-pane fade">
+            <div id="general">
 
                 <!--general news section-->
                 {{macro.displayNewsList(general)}}
             </div>
             <div id="sports" class="tab-pane fade">
                 <!-- Sports news sources-->
-                {{ macro.displayNewsList(sports) }}text-align:center;
+                {{ macro.displayNewsList(sports) }}
             </div>
             <div id="technology" class="tab-pane fade">
                 <!-- Technology news sources -->
@@ -64,3 +66,4 @@
   </div>
 
     {% endblock %}
+    
