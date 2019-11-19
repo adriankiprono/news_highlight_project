@@ -5,15 +5,17 @@
 #### By **{adrian tuimur}**
 
 ## Description
-This web app  that enable a user to view the latest news and even reciew breaking news
+This web app  that enable a user to view the latest news and even receive breaking news
 at the comfort of their devices
 
 ## Setup/Installation Requirements
-* 
-* 
-* 
-* 
-* 
+* https://adriannews.herokuapp.com/
+* go to github adriankiprono
+
+* repo name news_highlights
+* clone the repo
+* run ./start.sh
+* for test run  python3.8 manage.py
 
 ##Specs
 
