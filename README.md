@@ -1,4 +1,4 @@
-# {News}
+# {News_highlight}
 
 #### {The web page enables one to get news articles}
 
